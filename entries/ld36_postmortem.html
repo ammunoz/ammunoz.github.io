@@ -1,9 +1,9 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>AMMUNOZ: Home</title>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>AMMUNOZ: LudumDare 36 Postmortem</title>
     
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/pygment_trac.css">
@@ -11,84 +11,27 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-  </head>
-  <body>
-   <font color="black">
-    <div class="wrapper">
-      <header>
-		<h1>Alfonso Munoz <small>Student/Software Developer</small></h1>
-		<h3>Pages</h3>
-		<p><a href="ld36_postmortem.html">Ludum Dare 36: SPATCON Postmortem</a></p>
-		<p><a href="index.html">Home</a></p>
-		<h3>Completed Projects</h3>
-		<p><a href="http://ludumdare.com/compo/ludum-dare-36/?action=preview&uid=113383">Sticks, Pipes, and the Call of Nature (SPATCON)</a></p>
-		<h3>Prototypes</h3>
-		<p><a href="http://ammunoz.github.io/CitationTool">CitationTool</a></p>
-		<p><a href="http://ammunoz.github.io/ScrabbleScoreKeeper">Scrabble ScoreKeeper</a></p>
-      </header>
-      <section>
-        <h1>Ludum Dare 36: SPATCON Postmortem
-			<div align="right"><small>August 30, 2016</small></div>
-		</h1>
-		
-		<hr>
-		<p><b>If you haven't tried it yet, please check out our Ludum Dare 36 submission!</b><br>
-		<small><a href="http://ludumdare.com/compo/ludum-dare-36/?action=preview&uid=113383">play SPATCON here</a></small></p>
-		<hr>
-		
-        <p>Since summer was going to end soon, I figured, what better way to spend a nice, sunny weekend than with a game jam?
-		That's exactly what I did! In this post, I’ll briefly discuss my experience with the 36th Ludum Dare game jam.</p>
-		
-		<h2>Challenge: Lack Of A Unified Vision</h2>
-		<p>The theme for the August game jam was Ancient technology. 
-		The team decided early on that we would be making a rhythm game that would feature ancient instruments. 
-		We failed to discuss the specificities of the project prior to the start of development which resulted in a misunderstanding of expectations.
-		This caused a lot of the earlier code to be scrapped and narrowed our development time frame.</p>
-		<p>Furthermore, it was difficult to proceed whenever I encountered a situation that would need the team's input.
-		This caused development to be occasionally interrupted to allow the team to discuss whenever a critical decision was to be made.</p>
-		
-		<h2>Resolution: Hourly stand-ups</h2>
-		<p>We decided to hold hourly stand-ups to update the team with our individual progress.
-		This proved incredibly useful as the standups allowed the team to refine the end goals of the project as we dove deeper into development. 
-		The team was also able to discuss and make critical decisions as a whole.
-		It essentially enabled flexible development of the game as we found our vision and design to be constantly evolving.</p>
-		<p>Considering that we only had the weekend, I did not think my experience with SCRUM would have been relevant. 
-		The agile methodology allowed us to produce a well-polished game in such a short time.</p>
-		
-		<h2>Victory: Team Ownership</h2>
-		<p>With that said, the resulting shared ownership by the team was wonderful. 
-		Everyone had a say in every decision the team made. 
-		We were able to voice out our opinions as the team critiqued ideas and not people. 
-		It enforced the spirit of collaboration and made the project uniquely ours.</p>
-		
-		<h2>Challenge: Technical ability</h2>
-		<p>The biggest challenge I faced during the game jam was my technical ability. 
-		Since I was a student who was trying to keep up with professionals, I felt like I should not have been part of the team. 
-		My capabilities paled in comparison to the technical prowess of the indie veterans that were my teammates. 
-		Evidently, I felt that I was holding the team back and felt bad for it.</p>
-		
-		<h2>Resolution: Mentorship</h2>
-		<p>Despite the weakness of my technical abilities, the team was very supportive of me. 
-		Every question I asked was met with answers, suggestions, and explanations. 
-		My relatively slower development time was met with patience and understanding.
-		For example, I was taught some of the mechanics of midi files and how we could implement the timing for each beat.</p>
-		
-		<h2>Victory: Initiative</h2>
-		<p>The guilt pushed me to work a lot harder than I expected. 
-		I did every little thing I could do to contribute, no matter how minor. 
-		I took the liberty of scrapping deprecated code and tidying up the code base. 
-		I tried to ensure that the game was usability-oriented by repeatedly applying heuristic evaluations. 
-		I also assisted in the discovery and resolution of bugs and defects throughout the weekend. 
-		Finally, I took charge of creating our Ludum Dare submission entry which took a lot more creativity than I initially expected. 
-		Although my contributions to the game have been relatively minor and slow, I think I earned my place in the team by the end of it.</p>
-		<hr>
-     </font>
-      
-		<p><small>Last updated on: September 1, 2016.<br>
-        Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-		<p class="view"><a href="http://github.com/ammunoz">View My Projects on GitHub <small>github/ammunoz</small></a></p>
-      
-	</div>
-    <script src="javascripts/scale.fix.js"></script>
+	</head>
+	
+  <body style="color:black">
+		<div class="wrapper">
+			<!-- HEADER -->
+			<div id="header" w3-include-html="../header.html"></div> 
+			<section>
+			
+			<!-- Content -->
+			<div id="content" w3-include-html="ld36_postmortem_content.html"></div>
+
+			<!-- FOOTER -->
+			<div id="footer" w3-include-html="../footer.html"></div> 
+			</section>
+		</div>
+
+		<script src="../javascripts/scale.fix.js"></script>
+		<script src="../javascripts/w3.js"></script>
   </body>
 </html>
+
+<script>
+	w3.includeHTML();
+</script>
